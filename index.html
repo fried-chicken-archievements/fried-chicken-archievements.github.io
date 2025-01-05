@@ -47,26 +47,26 @@
             font-size: 0.9em;
             color: gray;
         }
-        .rating-low {
+        .rating-newbie {
             color: #808080;
         }
-        .rating-newbie {
-            color: #377e22;
-        }
         .rating-pupil {
-            color: #4ba59e;
+            color: #377E22;
         }
         .rating-specialist {
-            color: #0000f5;
+            color: #4BA59E;
         }
-        .rating-expert {
-            color: #9c1fa4;
+        .rating-expret {
+            color: #0000F5;
         }
         .rating-candidate-master {
-            color: #f09235;
+            color: #9C1FA4;
         }
         .rating-master {
             color: #f09235;
+        }
+        .rating-grandmaster {
+            color: #EA3323;
         }
         .rating-legendary-grandmaster {
             color: #EA3323;
@@ -153,13 +153,13 @@
 
 <script>
     function getRatingClass(rating) {
-        if (rating < 1200) return 'rating-low';
-        if (rating < 1400) return 'rating-newbie';
-        if (rating < 1600) return 'rating-pupil';
-        if (rating < 1900) return 'rating-specialist';
-        if (rating < 2100) return 'rating-expert';
-        if (rating < 2400) return 'rating-candidate-master';
-        if (rating < 3000) return 'rating-master';
+        if (rating < 1200) return 'rating-newbie';
+        if (rating < 1400) return 'rating-pupil';
+        if (rating < 1600) return 'rating-specialist';
+        if (rating < 1900) return 'rating-expert';
+        if (rating < 2100) return 'rating-candidate-master';
+        if (rating < 2400) return 'rating-master';
+        if (rating < 3000) return 'rating-grandmaster';
         return 'rating-legendary-grandmaster';
     }
 
