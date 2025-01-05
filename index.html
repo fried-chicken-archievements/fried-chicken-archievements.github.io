@@ -47,102 +47,155 @@
             font-size: 0.9em;
             color: gray;
         }
+        .rating-low {
+            color: #808080;
+        }
+        .rating-newbie {
+            color: #377e22;
+        }
+        .rating-pupil {
+            color: #4ba59e;
+        }
+        .rating-specialist {
+            color: #0000f5;
+        }
+        .rating-expert {
+            color: #9c1fa4;
+        }
+        .rating-candidate-master {
+            color: #f09235;
+        }
+        .rating-master {
+            color: #EA3323;
+        }
+        .rating-legendary-grandmaster {
+            color: #EA3323;
+        }
+        .rating-legendary-grandmaster span:first-child {
+            color: black;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Fried Chicken Achievements</h1>
-        <img 
-            src="https://s2.loli.net/2025/01/05/xWZrq3Ri4zvG1IO.png" 
-            alt="Fried Chicken Image" 
+<header>
+    <h1>Fried Chicken Achievements</h1>
+    <img
+            src="https://s2.loli.net/2025/01/05/xWZrq3Ri4zvG1IO.png"
+            alt="Fried Chicken Image"
             class="header-image"
-        />
-    </header>
+    />
+</header>
 
-    <div class="container">
-        <section>
-            <h2>🎓 学历方面</h2>
+<div class="container">
+    <section>
+        <h2>🎓 学历方面</h2>
+        <ul>
+            <li>BHSF 高中</li>
+            <li>BIT 本科</li>
+            <li>BUAA 硕士</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>📚 学术方面</h2>
+        <ul>
+            <li>硕士期间发表四篇论文。其中包括</li>
             <ul>
-                <li>BHSF 高中</li>
-                <li>BIT 本科</li>
-                <li>BUAA 硕士</li>
+                <li>一篇 nlp 顶会</li>
+                <li>一篇 CCF-A</li>
+                <li>一篇 CCF-B</li>
             </ul>
-        </section>
+        </ul>
+    </section>
 
-        <section>
-            <h2>📚 学术方面</h2>
+    <section>
+        <h2>🌍 社会方面</h2>
+        <ul>
+            <li>曾在全球独角兽企业排行榜第一名字节跳动、世界 500 强北京快手科技有限公司以**核心**身份参与算法岗实习</li>
+            <li>此后为寻找人生方向选择三开：找工作、教培、申 PhD</li>
             <ul>
-                <li>硕士期间发表四篇论文。其中包括</li>
-                <ul>
-                    <li>一篇 nlp 顶会</li>
-                    <li>一篇 CCF-A</li>
-                    <li>一篇 CCF-B</li>
-                </ul>
+                <li><del>获得港科广 PhD offer</del></li>
+                <li>获得华为 15 级算法岗 offer (高达35K*15)</li>
+                <li>获得70W的京东算法岗Offer</li>
+                <li><del>最终选择教培界，获得清华大学附属中学实习留用 offer</del></li>
             </ul>
-        </section>
+        </ul>
+    </section>
 
-        <section>
-            <h2>🌍 社会方面</h2>
-            <ul>
-                <li>曾在全球独角兽企业排行榜第一名字节跳动、世界 500 强北京快手科技有限公司以**核心**身份参与算法岗实习</li>
-                <li>此后为寻找人生方向选择三开：找工作、教培、申 PhD</li>
-                <ul>
-                    <li><del>获得港科广 PhD offer</del></li>
-                    <li>获得华为 15 级算法岗 offer (高达35K*15)</li>
-                    <li>获得70W的京东算法岗Offer</li>
-                    <li><del>最终选择教培界，获得清华大学附属中学实习留用 offer</del></li>
-                </ul>
-            </ul>
-        </section>
+    <section>
+        <h2>🏆 竞赛方面</h2>
+        <ul>
+            <li id="codeforces-rating">Codeforces rating:</li>
+            <li>在国际大学生程序设计竞赛西安邀请赛中获得前五名（金牌），多次取得国际大学生程序设计竞赛银牌</li>
+            <li>在国际性质的比赛牛客多校 2024 第五场中获得 F 题一血</li>
+            <li>在校内的一届全国性质的天梯赛中，击败 BIT CF 2793 分，即将抵达 LGM，曾获得区域赛冠军、全国性质的算法比赛中硕博组第一名、中国大学生程序设计竞赛总决赛季军、国际大学生程序设计竞赛世界总决赛最高荣誉的选手 fallleaves，拿下 BIT 校内第一</li>
+            <li>在全国性质的蓝桥杯大赛中进入首页获奖名单</li>
+            <li>在 2024 CSP J 组与 S 组同时取得一等奖</li>
+            <li>在美国信息学奥林匹克竞赛（USACO）银组中取得满分的好成绩</li>
+            <li>（注：2024 牛客多校第五场一血的账号主人已签署协议将账号转让给鸡）</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>🏆 竞赛方面</h2>
-            <ul>
-                <li id="codeforces-rating"></li>
-                <li>在国际大学生程序设计竞赛西安邀请赛中获得前五名（金牌），多次取得国际大学生程序设计竞赛银牌</li>
-                <li>在国际性质的比赛牛客多校 2024 第五场中获得 F 题一血</li>
-                <li>在校内的一届全国性质的天梯赛中，击败 BIT CF 2793 分，即将抵达 LGM，曾获得区域赛冠军、全国性质的算法比赛中硕博组第一名、中国大学生程序设计竞赛总决赛季军、国际大学生程序设计竞赛世界总决赛最高荣誉的选手 fallleaves，拿下 BIT 校内第一</li>
-                <li>在全国性质的蓝桥杯大赛中进入首页获奖名单</li>
-                <li>在 2024 CSP J 组与 S 组同时取得一等奖</li>
-                <li>在美国信息学奥林匹克竞赛（USACO）银组中取得满分的好成绩</li>
-                <li>（注：2024 牛客多校第五场一血的账号主人已签署协议将账号转让给鸡）</li>
-            </ul>
-        </section>
+    <section>
+        <h2>🎭 其他方面</h2>
+        <ul>
+            <li>曾在中国最著名的公众号谜咚咚谜中获得两次一血</li>
+            <li>著名冷笑话大师</li>
+            <li>随蓝赛通过了海选（淘汰赛一枪不开遗憾离场）</li>
+            <li>曾与 Pedestrian1 在北京知名餐厅厨房制造 WoodGardenHouse 共进晚餐</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>🎭 其他方面</h2>
-            <ul>
-                <li>曾在中国最著名的公众号谜咚咚谜中获得两次一血</li>
-                <li>著名冷笑话大师</li>
-                <li>随蓝赛通过了海选（淘汰赛一枪不开遗憾离场）</li>
-                <li>曾与 Pedestrian1 在北京知名餐厅厨房制造 WoodGardenHouse 共进晚餐</li>
-            </ul>
-        </section>
+    <footer>
+        &copy; 2025 Fried Chicken Achievements. All Rights Reserved.
+    </footer>
+</div>
 
-        <footer>
-            &copy; 2025 Fried Chicken Achievements. All Rights Reserved.
-        </footer>
-    </div>
+<script>
+    function getRatingClass(rating) {
+        if (rating < 1200) return 'rating-low';
+        if (rating < 1400) return 'rating-newbie';
+        if (rating < 1600) return 'rating-pupil';
+        if (rating < 1900) return 'rating-specialist';
+        if (rating < 2100) return 'rating-expert';
+        if (rating < 2400) return 'rating-candidate-master';
+        if (rating < 3000) return 'rating-master';
+        return 'rating-legendary-grandmaster';
+    }
 
-    <script>
-        async function fetchCodeforcesRating(handles) {
-            const url = `https://codeforces.com/api/user.info?handles=${handles}&checkHistoricHandles=true`;
-            try {
-                const response = await fetch(url);
-                const data = await response.json();
-                if (data.status === "OK" && data.result.length > 0) {
-                    const ratings = data.result.map(user => `- ${user.handle}: ${user.rating} (max. ${user.maxRank} ${user.maxRating})`).join('<br>');
-                    document.getElementById("codeforces-rating").innerHTML = `Codeforces rating:<br>${ratings}`;
-                } else {
-                    document.getElementById("codeforces-rating").textContent = "Codeforces Rating: Data not available.";
-                }
-            } catch (error) {
-                console.error("Error fetching Codeforces data:", error);
-                document.getElementById("codeforces-rating").textContent = "Codeforces Rating: Error fetching data.";
+    async function fetchCodeforcesRating(handle) {
+        const url = `https://codeforces.com/api/user.info?handles=${handle}&checkHistoricHandles=true`;
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            if (data.status === "OK" && data.result.length > 0) {
+                const user = data.result[0];
+                const ratingClass = getRatingClass(user.rating);
+                const maxRatingClass = getRatingClass(user.maxRating);
+                return `
+                <li>
+                    <a href="https://codeforces.com/profile/${user.handle}"<span class="${ratingClass}">${user.handle}</span></a>:
+                    <span class="${ratingClass}">${user.rating}</span>
+                    (max.
+                    <span class="${maxRatingClass}">${user.maxRank} ${user.maxRating}</span>)
+                </li>`;
+            } else {
+                return `<li>${handle}: Data not available.</li>`;
             }
+        } catch (error) {
+            console.error(`Error fetching data for ${handle}:`, error);
+            return `<li>${handle}: Error fetching data.</li>`;
         }
+    }
 
-        fetchCodeforcesRating("fried-chicken,bit-noob");
-    </script>
+
+    async function updateCodeforcesRatings() {
+        const handles = ["fried-chicken", "bit-noob"];
+        const results = await Promise.all(handles.map(fetchCodeforcesRating));
+        document.getElementById("codeforces-rating").innerHTML ='<li>Codeforces Rating:<ul>'+ results.join('')+'</ul></li>';
+    }
+
+    updateCodeforcesRatings();
+</script>
 </body>
 </html>
