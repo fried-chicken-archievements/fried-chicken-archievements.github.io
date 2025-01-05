@@ -19,7 +19,7 @@
             padding: 20px;
         }
         .header-image {
-            max-width: 100px; /* 可以在此处调节图片大小 */
+            max-width: 100px;
             height: auto;
             margin-top: 10px;
             border-radius: 4px;
@@ -78,7 +78,6 @@
                     <li>一篇 CCF-A</li>
                     <li>一篇 CCF-B</li>
                 </ul>
-                
             </ul>
         </section>
 
@@ -99,6 +98,7 @@
         <section>
             <h2>🏆 竞赛方面</h2>
             <ul>
+                <li id="codeforces-rating"></li>
                 <li>在国际大学生程序设计竞赛西安邀请赛中获得前五名（金牌），多次取得国际大学生程序设计竞赛银牌</li>
                 <li>在国际性质的比赛牛客多校 2024 第五场中获得 F 题一血</li>
                 <li>在校内的一届全国性质的天梯赛中，击败 BIT CF 2793 分，即将抵达 LGM，曾获得区域赛冠军、全国性质的算法比赛中硕博组第一名、中国大学生程序设计竞赛总决赛季军、国际大学生程序设计竞赛世界总决赛最高荣誉的选手 fallleaves，拿下 BIT 校内第一</li>
@@ -123,5 +123,26 @@
             &copy; 2025 Fried Chicken Achievements. All Rights Reserved.
         </footer>
     </div>
+
+    <script>
+        async function fetchCodeforcesRating(handles) {
+            const url = `https://codeforces.com/api/user.info?handles=${handles}&checkHistoricHandles=true`;
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                if (data.status === "OK" && data.result.length > 0) {
+                    const ratings = data.result.map(user => `- ${user.handle}: ${user.rating} (max. ${user.maxRank} ${user.maxRating})`).join('<br>');
+                    document.getElementById("codeforces-rating").innerHTML = `Codeforces rating:<br>${ratings}`;
+                } else {
+                    document.getElementById("codeforces-rating").textContent = "Codeforces Rating: Data not available.";
+                }
+            } catch (error) {
+                console.error("Error fetching Codeforces data:", error);
+                document.getElementById("codeforces-rating").textContent = "Codeforces Rating: Error fetching data.";
+            }
+        }
+
+        fetchCodeforcesRating("fried-chicken,bit-noob");
+    </script>
 </body>
 </html>
