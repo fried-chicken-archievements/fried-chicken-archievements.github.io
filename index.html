@@ -190,7 +190,7 @@
 
 
     async function updateCodeforcesRatings() {
-        const handles = ["fried-chicken", "bit-noob"];
+        const handles = ["fried-chicken", "buaa-noob", "bit-noob"];
         const results = await Promise.all(handles.map(fetchCodeforcesRating));
         document.getElementById("codeforces-rating").innerHTML ='<li>Codeforces Rating:<ul>'+ results.join('')+'</ul></li>';
     }
